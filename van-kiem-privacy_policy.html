@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy - Vạn Kiếm Quy Tông (Sword Realm)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Noto+Serif:ital,wght@0,400;0,600;1,400&display=swap"
+    rel="stylesheet">
+  <style>
+    :root {
+      --bg-dark: #0D1117;
+      --panel-bg: rgba(22, 27, 34, 0.85);
+      --border-gold: #FFD700;
+      --accent-cyan: #00E5FF;
+      --accent-purple: #9D4EDD;
+      --text-main: #E6EDF3;
+      --text-dim: #8B949E;
+      --card-border: rgba(255, 215, 0, 0.25);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--bg-dark);
+      background-image:
+        radial-gradient(circle at 10% 20%, rgba(157, 78, 221, 0.12) 0%, transparent 40%),
+        radial-gradient(circle at 90% 80%, rgba(0, 229, 255, 0.08) 0%, transparent 40%);
+      color: var(--text-main);
+      font-family: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
+      line-height: 1.7;
+      padding: 24px 16px;
+    }
+
+    .container {
+      max-width: 860px;
+      margin: 0 auto;
+    }
+
+    header {
+      text-align: center;
+      padding: 36px 20px 24px;
+      border-bottom: 1px solid var(--card-border);
+      margin-bottom: 30px;
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 4px 14px;
+      border-radius: 20px;
+      background: rgba(255, 215, 0, 0.15);
+      border: 1px solid var(--border-gold);
+      color: var(--border-gold);
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-bottom: 14px;
+    }
+
+    h1 {
+      font-family: 'Noto Serif', serif;
+      font-size: 28px;
+      color: #FFF;
+      text-shadow: 0 0 16px rgba(255, 215, 0, 0.35);
+      margin-bottom: 6px;
+    }
+
+    .subtitle {
+      color: var(--accent-cyan);
+      font-size: 15px;
+      margin-bottom: 12px;
+    }
+
+    .date-meta {
+      font-size: 13px;
+      color: var(--text-dim);
+    }
+
+    .lang-switcher {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      margin-top: 20px;
+    }
+
+    .lang-btn {
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255, 215, 0, 0.3);
+      color: var(--text-main);
+      padding: 8px 18px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 14px;
+      font-weight: 600;
+      transition: all 0.2s ease;
+    }
+
+    .lang-btn:hover,
+    .lang-btn.active {
+      background: var(--border-gold);
+      color: #0D1117;
+      border-color: var(--border-gold);
+      box-shadow: 0 0 14px rgba(255, 215, 0, 0.4);
+    }
+
+    .content-section {
+      background: var(--panel-bg);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid var(--card-border);
+      border-radius: 16px;
+      padding: 32px 28px;
+      margin-bottom: 28px;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+    }
+
+    h2 {
+      font-family: 'Noto Serif', serif;
+      color: var(--border-gold);
+      font-size: 20px;
+      margin-top: 24px;
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      border-left: 3px solid var(--accent-cyan);
+      padding-left: 10px;
+    }
+
+    h2:first-of-type {
+      margin-top: 0;
+    }
+
+    h3 {
+      color: var(--accent-cyan);
+      font-size: 16px;
+      margin: 16px 0 8px;
+    }
+
+    p {
+      margin-bottom: 14px;
+      font-size: 15px;
+      color: var(--text-main);
+    }
+
+    ul {
+      margin: 10px 0 16px 20px;
+    }
+
+    li {
+      margin-bottom: 8px;
+      font-size: 15px;
+    }
+
+    .highlight-box {
+      background: rgba(0, 229, 255, 0.08);
+      border: 1px solid rgba(0, 229, 255, 0.25);
+      border-radius: 10px;
+      padding: 14px 18px;
+      margin: 16px 0;
+    }
+
+    .contact-box {
+      background: rgba(255, 215, 0, 0.06);
+      border: 1px solid rgba(255, 215, 0, 0.25);
+      border-radius: 10px;
+      padding: 18px;
+      margin-top: 24px;
+    }
+
+    .contact-box strong {
+      color: var(--border-gold);
+    }
+
+    footer {
+      text-align: center;
+      font-size: 13px;
+      color: var(--text-dim);
+      padding: 24px 0 40px;
+    }
+
+    a {
+      color: var(--accent-cyan);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .lang-container {
+      display: block;
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    @media (max-width: 600px) {
+      .content-section {
+        padding: 24px 18px;
+      }
+
+      h1 {
+        font-size: 22px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <div class="badge">CHÍNH THỨC / OFFICIAL POLICY</div>
+      <h1>Vạn Kiếm Quy Tông • Sword Realm</h1>
+      <div class="subtitle">Chính Sách Bảo Mật / Privacy Policy</div>
+      <div class="date-meta">Cập nhật lần cuối / Last updated: 04/09/2026</div>
+
+      <div class="lang-switcher">
+        <button class="lang-btn active" onclick="switchLang('vi')">🇻🇳 Tiếng Việt</button>
+        <button class="lang-btn" onclick="switchLang('en')">🇬🇧 English</button>
+      </div>
+    </header>
+
+    <!-- TIẾNG VIỆT -->
+    <div id="section-vi" class="lang-container">
+      <div class="content-section">
+        <h2>1. Tổng Quan Về Trò Chơi</h2>
+        <p>
+          Chào mừng bạn đến với trò chơi <strong>Vạn Kiếm Quy Tông (Sword Realm)</strong>, tựa game Tiên Hiệp Match-3
+          RPG do <strong>Sword Realm Studio</strong> phát triển.
+        </p>
+        <div class="highlight-box">
+          <p>
+            🛡️ <strong>Kiến Trúc Hoàn Toàn Phía Thiết Bị (Client-Side):</strong> Game không yêu cầu tạo tài khoản,
+            không yêu cầu đăng nhập mật khẩu, mạng xã hội, và không lưu trữ thông tin nhận dạng cá nhân (PII) trên máy
+            chủ riêng.
+          </p>
+        </div>
+
+        <h2>2. Dữ Liệu Chúng Tôi Thu Thập & Xử Lý</h2>
+        <h3>a. Dữ liệu lưu cục bộ trên máy (Local Storage)</h3>
+        <p>Ứng dụng ghi nhớ dữ liệu trực tiếp trong bộ nhớ thiết bị của bạn (SharedPreferences / UserDefaults) bao gồm:
+        </p>
+        <ul>
+          <li>Ải chơi hiện tại và ải cao nhất đã vượt qua (Thiên Kiếp Lộ).</li>
+          <li>Cảnh giới tu luyện (Luyện Khí, Trúc Cơ, Kim Đan, Nguyên Anh, Hóa Thần) và điểm thuộc tính cộng thêm.</li>
+          <li>Số lượng Linh Thạch và Pháp bảo sở hữu (Tru Tiên Kiếm, Càn Khôn Na Di, Định Tâm Phù).</li>
+          <li>Tùy chọn cá nhân: Bật/tắt âm thanh (SFX), nhạc nền (BGM), rung Haptic, ngôn ngữ hiển thị.</li>
+        </ul>
+        <p><em>Dữ liệu này hoàn toàn thuộc quyền sở hữu của bạn và có thể xóa bất cứ lúc nào bằng cách xóa dữ liệu app
+            trong Cài đặt thiết bị.</em></p>
+
+        <h3>b. Dữ liệu chẩn đoán kỹ thuật (Google Firebase)</h3>
+        <p>Để đảm bảo trò chơi vận hành ổn định và không phát sinh lỗi, chúng tôi sử dụng các dịch vụ tiêu chuẩn của
+          Google Firebase:</p>
+        <ul>
+          <li><strong>Firebase Crashlytics:</strong> Tự động ghi lại báo cáo sự cố (loại máy, phiên bản hệ điều hành,
+            đoạn mã phát sinh lỗi) khi ứng dụng gặp trục trặc để đội ngũ phát triển khắc phục kịp thời.</li>
+          <li><strong>Firebase Analytics:</strong> Thống kê ẩn danh tổng thể về số lượt mở ứng dụng, tỷ lệ hoàn thành
+            màn chơi để cân bằng độ khó. Không thu thập bất kỳ dữ liệu định danh cá nhân nào.</li>
+          <li><strong>Firebase Remote Config:</strong> Đồng bộ các thông số cấu hình từ xa (cờ tính năng, thông báo bảo
+            trì, phiên bản bắt buộc cập nhật).</li>
+        </ul>
+
+        <h2>3. Những Gì Chúng Tôi Tuyệt Đối KHÔNG Thu Thập</h2>
+        <ul>
+          <li>❌ Không thu thập họ tên, địa chỉ nhà, email cá nhân hoặc số điện thoại.</li>
+          <li>❌ Không định vị GPS thời gian thực.</li>
+          <li>❌ Không truy cập danh bạ, thư viện ảnh cá nhân, máy ảnh hoặc micrô.</li>
+          <li>❌ Không thu thập số tài khoản ngân hàng hoặc thẻ tín dụng.</li>
+        </ul>
+
+        <h2>4. Quyền Riêng Tư Của Trẻ Em (COPPA & GDPR-K)</h2>
+        <p>
+          Trò chơi hướng tới đối tượng người chơi từ 12 tuổi trở lên với hình ảnh chiến đấu huyền ảo không bạo lực thực
+          tế. Chúng tôi tuân thủ nghiêm ngặt Đạo luật bảo vệ quyền riêng tư của trẻ em trên mạng (COPPA) và quy định bảo
+          vệ dữ liệu chung (GDPR). Chúng tôi không cố ý thu thập thông tin của trẻ em dưới 13 tuổi (hoặc dưới 16 tuổi
+          tại Liên minh Châu Âu).
+        </p>
+
+        <h2>5. Bảo Mật & Mã Hóa Dữ Liệu</h2>
+        <p>
+          Mọi dữ liệu trao đổi giữa ứng dụng và máy chủ Google Firebase đều được mã hóa bằng giao thức tiêu chuẩn công
+          nghiệp HTTPS/TLS trong suốt quá trình truyền tải qua Internet.
+        </p>
+
+        <h2>6. Quyền Xóa Dữ Liệu Của Người Dùng</h2>
+        <p>
+          Bạn có thể xóa toàn bộ dữ liệu tiến trình chơi bất kỳ lúc nào bằng cách vào mục <strong>Cài Đặt Máy &gt; Ứng
+            Dụng &gt; Vạn Kiếm Quy Tông &gt; Xóa Dữ Liệu (Clear Data)</strong> hoặc gỡ cài đặt ứng dụng khỏi thiết bị.
+        </p>
+
+        <div class="contact-box">
+          <h2>7. Thông Tin Liên Hệ</h2>
+          <p>Mọi thắc mắc hoặc yêu cầu hỗ trợ về quyền riêng tư, vui lòng liên hệ:</p>
+          <p>
+            • <strong>Email hỗ trợ:</strong> <a
+              href="mailto:support@truyenfulldich.com">support@truyenfulldich.com</a><br>
+            • <strong>Nhà phát triển:</strong> Truyen Full Dich / Sword Realm Studio<br>
+            • <strong>Quốc gia:</strong> Việt Nam
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ENGLISH -->
+    <div id="section-en" class="lang-container hidden">
+      <div class="content-section">
+        <h2>1. Game Overview</h2>
+        <p>
+          Welcome to <strong>Sword Realm (Vạn Kiếm Quy Tông)</strong>, an offline-friendly Xianxia Match-3 RPG developed
+          and operated by <strong>Sword Realm Studio</strong>.
+        </p>
+        <div class="highlight-box">
+          <p>
+            🛡️ <strong>Client-Side Architecture:</strong> The game does not require account registration, passwords,
+            social media logins, or cloud databases. No personally identifiable information (PII) is collected on
+            private backend servers.
+          </p>
+        </div>
+
+        <h2>2. Information Collected & Processed</h2>
+        <h3>a. On-Device Local Storage</h3>
+        <p>To preserve your game progress and preferences, the app stores data strictly on your local device
+          (SharedPreferences / UserDefaults):</p>
+        <ul>
+          <li>Current stage and highest cleared level on the Tribulation Path.</li>
+          <li>Cultivation realm rank (Qi Refining, Foundation Building, Golden Core, Nascent Soul, Spirit Severing) and
+            attribute bonus stats.</li>
+          <li>Virtual inventory (Spirit Stones balance, artifact boosters: Heaven Sword, Qiankun Shift, Mind Talisman).
+          </li>
+          <li>User preferences: Sound effects (SFX), background music (BGM), haptic feedback, and interface language.
+          </li>
+        </ul>
+        <p><em>You retain 100% control over this data. You can clear it anytime via your device's application
+            settings.</em></p>
+
+        <h3>b. Technical Diagnostics & Analytics (Google Firebase)</h3>
+        <p>To ensure high stability and smooth gameplay, we utilize standard developer tools provided by Google
+          Firebase:</p>
+        <ul>
+          <li><strong>Firebase Crashlytics:</strong> Automatically records anonymous crash logs (device model, OS
+            version, call stacks) when an error occurs to expedite bug resolution.</li>
+          <li><strong>Firebase Analytics:</strong> Measures anonymous, aggregated gameplay events (app launches, stage
+            clears) for game balancing. No personal identity is ever tracked.</li>
+          <li><strong>Firebase Remote Config:</strong> Dynamically loads configuration parameters (version checks, event
+            announcements) securely.</li>
+        </ul>
+
+        <h2>3. Data We NEVER Collect</h2>
+        <ul>
+          <li>❌ No full names, home addresses, personal emails, or telephone numbers.</li>
+          <li>❌ No precise GPS coordinates or real-time location.</li>
+          <li>❌ No device contacts, photos, camera, or microphone access.</li>
+          <li>❌ No financial or payment card credentials.</li>
+        </ul>
+
+        <h2>4. Children's Privacy (COPPA & GDPR-K Compliance)</h2>
+        <p>
+          Sword Realm is designed for players aged 12 and older featuring stylized fantasy combat. We do not knowingly
+          solicit or collect personal information from children under 13 (or under 16 in the EEA). If you believe a
+          child has provided us with personal data, please contact our support team immediately.
+        </p>
+
+        <h2>5. Data Security & Encryption</h2>
+        <p>
+          All network communications with Google Firebase services are encrypted in transit using industry-standard
+          HTTPS/TLS protocols.
+        </p>
+
+        <h2>6. Data Deletion & User Rights</h2>
+        <p>
+          You may reset or delete all game progress at any time by navigating to <strong>Device Settings &gt; Apps &gt;
+            Sword Realm &gt; Clear Storage / Clear Data</strong>, or by uninstalling the application.
+        </p>
+
+        <div class="contact-box">
+          <h2>7. Contact Information</h2>
+          <p>For questions or support regarding this Privacy Policy, please contact:</p>
+          <p>
+            • <strong>Support Email:</strong> <a href="vienhp1996@gmail.com">support@truyenfulldich.com</a><br>
+            • <strong>Developer:</strong> Truyen Full Dich / Sword Realm Studio<br>
+            • <strong>Location:</strong> Vietnam
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      &copy; 2026 Truyen Full Dich / Sword Realm Studio. All rights reserved.
+    </footer>
+  </div>
+
+  <script>
+    function switchLang(lang) {
+      const viSec = document.getElementById('section-vi');
+      const enSec = document.getElementById('section-en');
+      const buttons = document.querySelectorAll('.lang-btn');
+
+      if (lang === 'vi') {
+        viSec.classList.remove('hidden');
+        enSec.classList.add('hidden');
+        buttons[0].classList.add('active');
+        buttons[1].classList.remove('active');
+      } else {
+        viSec.classList.add('hidden');
+        enSec.classList.remove('hidden');
+        buttons[0].classList.remove('active');
+        buttons[1].classList.add('active');
+      }
+    }
+  </script>
+</body>
+
+</html>
